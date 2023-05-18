@@ -17,4 +17,4 @@ const globalErrorHandler = (error, req, res, next) => {
     next(error);
   }
 
-  module.exports = {errorHandler, routeNotMatchHandler};
+  module.exports = {globalErrorHandler, routeNotMatchHandler};
