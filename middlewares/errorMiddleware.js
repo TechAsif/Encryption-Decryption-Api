@@ -1,4 +1,4 @@
-const errorHandler = (error, req, res, next) => {
+const globalErrorHandler = (error, req, res, next) => {
     console.log(error);
     
     const statusCode = error.statusCode || 500;
@@ -11,4 +11,10 @@ const errorHandler = (error, req, res, next) => {
     });
   };
 
-  module.exports = {errorHandler};
+  const routeNotMatchHandler = (req, res, next) => {
+    const error = new Error("Not Found");
+    error.statusCode = 404;
+    next(error);
+  }
+
+  module.exports = {errorHandler, routeNotMatchHandler};
