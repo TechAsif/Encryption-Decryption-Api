@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Environment configuration
+.env
+
+# Built files
+dist/
+
+# Debugging
+.vscode/
+node_modules/.cache/
+.sourcemaps/
+*.swp
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Testing
+coverage/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

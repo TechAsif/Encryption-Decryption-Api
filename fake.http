@@ -1,0 +1,16 @@
+
+POST http://localhost:3012/api/v1/encrypt HTTP/1.1
+Content-Type: application/json
+
+{
+    "str": "I want to become a good human",
+    "secret": "code99"
+}
+###
+POST http://localhost:3012/api/v1/decrypt HTTP/1.1
+Content-Type: application/json
+
+{
+    "str": "1c7f8053a09ac10d6cce2f72ff172e506f3fec47069af007f726bef27e31113f",
+    "secret": "code99"
+}
